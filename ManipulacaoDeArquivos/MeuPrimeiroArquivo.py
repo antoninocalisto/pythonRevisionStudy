@@ -14,3 +14,4 @@ with open("primeiro_arquivo.txt", "r") as arquivo:
         print(linha)
 
 # -------------------------------------
+# -------------------------------------
