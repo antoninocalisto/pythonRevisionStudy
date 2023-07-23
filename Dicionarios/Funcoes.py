@@ -10,3 +10,9 @@ def inserir(dicionario):
                                                   input("Data do ultimo acesso:").upper(),
                                                   input("Qual a ultima estacao acessada:").upper()
                                                   ]
+    salvar(dicionario)
+
+def salvar(dicionario):
+    with open("banco_de_dados_bd.txt", "a") as arquivo:
+        for chave,valor in dicionario.items():
+            arquivo.write(chave + ":" + str(valor))
